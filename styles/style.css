@@ -8,28 +8,31 @@
 } */
 
 @font-face {
-  font-family: 'Darker_Grotesque_Regular' ;
+  font-family: 'Darker_Grotesque_Regular';
   src: url(/fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Darker_Grotesque_Medium' ;
+  font-family: 'Darker_Grotesque_Medium';
   src: url(/fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Josefin_Sans_Regular' ;
+  font-family: 'Josefin_Sans_Regular';
   src: url(/fonts/Josefin_Sans_Regular/static/JosefinSans-Regular.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Darker_Grotesque_Semibold' ;
+  font-family: 'Darker_Grotesque_Semibold';
   src: url(/fonts/Darker_Grotesque/DarkerGrotesque-SemiBold.ttf);
   font-weight: normal;
   font-style: normal;
@@ -42,6 +45,12 @@
   margin: 0 auto;
 
 }
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
 
 a {
   text-decoration: none;
@@ -55,10 +64,12 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
 .jc-center {
   display: flex;
   justify-content: center;
 }
+
 .jc-start {
   display: flex;
   justify-content: start;
@@ -77,28 +88,48 @@ body {
   margin: 0;
   font-family: "Darker Grotesque", "sans-serif";
   background-color: #141923;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1 {
   color: #fff;
   font-family: 'Josefin_Sans_Regular';
   line-height: 60px;
-  
+
 }
+
+h2 {
+  font-family: 'Josefin_Sans_Regular';
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: 400;
+  color: #fff;
+
+
+}
+
+h4 {
+  font-family: 'Darker_Grotesque_Semibold';
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
 
 /*menu*/
 
-.page-header{
+.page-header {
   height: 140px;
-  
-  
+
+
 }
 
 .mainmenu {
   width: 703px;
   font-family: 'Darker_Grotesque_Medium';
-  
+
 }
 
 .mainmenu__item a {
@@ -110,7 +141,7 @@ h1 {
 .main-contant {
   height: 800px;
   margin-top: 185px;
-  
+
 
 }
 
@@ -129,18 +160,19 @@ h1 {
 
 .main-contant__button {
   width: 260px;
- 
+
 
 }
 
-.button__blue, .button__transparent {
+.button__blue,
+.button__transparent {
   width: 120px;
   height: 38px;
   margin-top: 140px;
   font-family: 'Darker_Grotesque_Semibold';
   font-size: 13px;
   color: #fff;
-  
+
 }
 
 
@@ -160,11 +192,11 @@ h1 {
   height: 524px;
 }
 
-.experience-presentation{
+.experience-presentation {
   background-image: url(../images/open-air-picture.jpg);
   background-size: cover;
   width: 50%;
-  
+
 }
 
 .experience-presentation div {
@@ -176,10 +208,11 @@ h1 {
 
 .experience-presentation__play {
   margin: 0 auto;
-  
+
 }
+
 .experience-presentation__play img {
-  
+
   width: 17px;
   height: 25px;
 }
@@ -190,36 +223,29 @@ h1 {
   height: 480px;
   margin: 0 auto;
   padding-left: 30px;
-  
-  
-}
 
-.experience-conditions h2 {
-  font-family: 'Josefin_Sans_Regular' ;
-  font-size: 46px;
-  line-height: 46px;
-  font-weight: 400;
-  color: #fff;
-  
 
 }
+
+
 
 
 
 .experience-conditions__plus {
   display: grid;
-  grid-template-columns: repeat(2,2fr);
+  grid-template-columns: repeat(2, 2fr);
 }
 
 .experience-conditions__plus h3 {
-  font-family: 'Darker_Grotesque_Regular' ;
+  font-family: 'Darker_Grotesque_Regular';
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   color: #fff;
 }
+
 .experience-conditions__plus p {
-  font-family: 'Darker_Grotesque_Regular' ;
+  font-family: 'Darker_Grotesque_Regular';
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
@@ -227,6 +253,87 @@ h1 {
   color: #B2B2D3;
 }
 
+/*location*/
+
+.location>div {
+  height: 60px;
+}
+
+.location-buttons {
+  width: 120px;
+}
+
+.location-buttons__left img {
+  transform: rotate(180deg);
+}
+
+.location-buttons__left,
+.location-buttons__right {
+  width: 55px;
+  height: 60px;
+  border: 1px solid #40467C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-buttons__left:hover,
+.location-buttons__right:hover {
+  background-color: #40467C;
+}
+
+.choosing {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  overflow-x:hidden;
+
+}
+
+.choosing-location {
+  height: 40px;
+  margin-top: 10px;
+  
+}
+.choosing-location img {
+  height: 400px;
+  
+}
+
+.choosing-location h5 {
+  color: #B2B2D3;
+  font-family: Darker Grotesque;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+ 
+
+}
+.choosing-location p {
+  color: #fff;
+ 
+
+}
+
+.choosing-location__rating {
+  width: 40px;
+
+}
+
+.choosing-location__rating img {
+  height: 15px;
+}
+
+.choosing-location__rating p {
+  color: #fff;
+}
+
+.choosing img {
+ 
+  height:auto;
+  width: 100%;
+}
 
 
 
