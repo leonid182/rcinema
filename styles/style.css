@@ -45,6 +45,7 @@
   margin: 0 auto;
 
 }
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -63,7 +64,7 @@ li {
 .jc-sb {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .jc-center {
@@ -90,9 +91,10 @@ li {
 .d-grid {
   display: grid;
 }
-.repeat-2fr{
+
+.repeat-2fr {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 body {
@@ -117,6 +119,14 @@ h2 {
   color: #fff;
 
 
+}
+
+h3 {
+  font-family: 'Darker_Grotesque_Regular';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
 
 h4 {
@@ -247,13 +257,7 @@ h4 {
   grid-template-columns: repeat(2, 2fr);
 }
 
-.experience-conditions__plus h3 {
-  font-family: 'Darker_Grotesque_Regular';
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #fff;
-}
+
 
 .experience-conditions__plus p {
   font-family: 'Darker_Grotesque_Regular';
@@ -279,7 +283,9 @@ h4 {
 }
 
 .location-buttons__left,
-.location-buttons__right {
+.location-buttons__right,
+.row-button__left,
+.row-button__right {
   width: 55px;
   height: 60px;
   border: 1px solid #40467C;
@@ -289,28 +295,31 @@ h4 {
 }
 
 .location-buttons__left:hover,
-.location-buttons__right:hover {
+.location-buttons__right:hover,
+.row-buttons__left:hover,
+.row-buttons__right:hover {
   background-color: #40467C;
 }
 
 .choosing {
-  
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
-  overflow-x:hidden;
+  overflow-x: hidden;
 
 }
 
 .choosing-location {
   height: 40px;
   margin-top: 10px;
-  
+
 }
+
 .choosing-location img {
   height: 400px;
-  
-  
+
+
 }
 
 .choosing-location h5 {
@@ -319,12 +328,13 @@ h4 {
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
- 
+
 
 }
+
 .choosing-location p {
   color: #fff;
- 
+
 
 }
 
@@ -342,19 +352,19 @@ h4 {
 }
 
 .choosing img {
- 
-  height:auto;
+
+  height: auto;
   width: 100%;
 }
 
 
 /*info*/
 .info {
-  background-color: #1B213A  ;
+  background-color: #1B213A;
   margin-top: 600px;
   height: 845px;
-  
- 
+
+
 }
 
 .info-block {
@@ -374,21 +384,16 @@ h4 {
 .accordion-img {
   position: absolute;
   top: 40px;
-  right:30px;
-  
+  right: 30px;
 
-  
+
+
 }
 
 
 
-.info-block__accordion h3 {
-  font-family: 'Darker_Grotesque_Regular';
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #fff;
-}
+
+
 
 .info-block__accordion p {
   font-family: 'Darker_Grotesque_Regular';
@@ -402,19 +407,140 @@ h4 {
 .info-img {
   position: absolute;
   left: 700px
-  
 }
 
-.accordion-second, .accordion-third {
+.accordion-second,
+.accordion-third {
   width: 540px;
   height: 100px;
   border: 1px solid #40467C;
   position: relative;
-  
+
   margin-left: 0px;
-  
+
 }
 
 
+/*Gallery*/
+
+.gallery {
+  background-color: #141923;
+  padding-top: 100px;
+}
+
+.gallery-header,
+.gallery-header__header {
+  height: 100px;
+}
+
+.gallery-header__header {
+  width: 600px;
+
+}
+
+.gallery-header__header p {
+  font-family: "Darker Grotesque";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #B2B2D3;
+}
+
+.gallery-header__header span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.gallery-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+}
 
 
+.big {
+  width: 600px;
+  height: 630px;
+}
+
+.small {
+  width: 290px;
+  height: 300px;
+}
+
+.gallery-photos__photos:nth-child(1) {
+  margin-top: -320px;
+  grid-row: 2/2;
+}
+
+.gallery-photos__photos:nth-child(2) {
+  grid-column: 2;
+
+}
+
+/*reviews*/
+
+.reviews {
+  border-color: #141923;
+  
+
+}
+
+.reviews h2 {
+  margin-top: -230px;
+}
+
+.column-button {
+  margin-top: 200px;
+}
+
+.column-button__left,
+.column-button__right {
+  width: 55px;
+  height: 60px;
+  border: 1px solid #40467C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+
+}
+
+
+.column-button__left:hover,
+.column-button__right:hover {
+  background-color: #40467C;
+}
+
+.column-button__left {
+  transform: rotate(270deg);
+}
+
+.column-button__right {
+  transform: rotate(90deg);
+}
+
+.reviews-info__block {
+  width: 500px;
+  height: 250px;
+  background-color: #1B213A;
+  padding: 40px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  
+}
+
+.reviews-info__block p {
+  font-family: "Darker Grotesque";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #B2B2D3;
+
+}
