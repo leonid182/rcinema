@@ -137,6 +137,18 @@ h4 {
   color: #fff;
 }
 
+h5 {
+  font-family: 'Darker Grotesque';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #B2B2D3;
+
+
+
+}
+
 
 
 /*menu*/
@@ -485,7 +497,7 @@ h4 {
 
 .reviews {
   border-color: #141923;
-  
+
 
 }
 
@@ -531,7 +543,7 @@ h4 {
   padding: 40px;
   margin-bottom: 20px;
   margin-right: 20px;
-  
+
 }
 
 .reviews-info__block p {
@@ -543,4 +555,128 @@ h4 {
   text-align: left;
   color: #B2B2D3;
 
+}
+
+/*message*/
+
+.message {
+  margin-top: 200px;
+  background-color: #1B213A;
+}
+
+.message img {
+  position: relative;
+  top: 0;
+  right: 300px;
+}
+
+.message-form form {
+  margin-top: 50px;
+  margin-left: -450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+
+}
+
+
+.message-form h2 {
+  margin-top: 100px;
+  margin-left: -450px;
+}
+
+form input {
+  background-color: #1B213A;
+  height: 60px;
+  border: 1px solid #40467C;
+
+
+}
+
+form input:hover {
+  border: 1px solid #fff;
+}
+
+.message-form__name,
+.message-form__email,
+.message-form__question {
+  padding-left: 20px;
+  color: #B2B2D3;
+
+}
+
+.message-form__question {
+  height: 120px;
+
+}
+
+.message-form__sending div {
+  width: 180px;
+}
+
+.button {
+  width: 200px;
+  border: none;
+  background-color: #40467C;
+  color: #fff;
+  font-family: "Darker Grotesque";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.label {
+  font-family: "Darker Grotesque";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #B2B2D3;
+}
+
+.label span {
+  font-weight: 600;
+  color: #fff;
+}
+
+/*footer*/
+.page-footer {
+  margin-top: 100px;
+  
+}
+.page-footer__info h5{
+  margin-bottom: 5px;
+}
+.page-footer__info {
+  font-family: 'Darker Grotesque';
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 10px;
+  color: #fff;
+  
+}
+
+.page-footer__contacts {
+  height: 200px;
+
+}
+
+.page-footer__email {
+background-color: #141923;
+}
+
+.footer-button {
+  width: 150px;
+}
+
+.page-footer__nets{
+  height: 120px;
+  background-color: #1B213A;
+}
+
+.page-footer__nets p {
+  color: #40467C;
 }
